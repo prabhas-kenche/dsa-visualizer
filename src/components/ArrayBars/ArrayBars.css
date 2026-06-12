@@ -1,0 +1,23 @@
+.array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+    height: 450px;
+    margin-top: 40px;
+}
+
+.array-bar {
+    width: 25px;
+    background-color: steelblue;
+    border-radius: 4px;
+    transition: all 0.3s ease, background-color 0.2s ease;
+}
+
+.comparing {
+    background-color: red;
+}
+
+.sorted {
+    background-color: green;
+}
