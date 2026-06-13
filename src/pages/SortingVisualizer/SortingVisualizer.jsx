@@ -6,6 +6,8 @@ import ArrayBars from "../../components/ArrayBars/ArrayBars";
 import bubbleSort from "../../algorithms/bubblesort";
 import selectionSort from "../../algorithms/selectionsort";
 import insertionSort from "../../algorithms/insertionSort";
+import mergeSort from "../../algorithms/mergeSort";
+import quickSort from "../../algorithms/quickSort";
 import ComplexityPanel from "../../components/ComplexityPanel/ComplexityPanel";
 import StatsPanel from "../../components/StatsPanel/StatsPanel";
 
@@ -85,6 +87,13 @@ function SortingVisualizer() {
         await sleep(speed);
       }
 
+      else if(step.type === "overwrite") {
+        currentArray[step.index] = step.value;
+        setArray([...currentArray]);
+
+        await sleep(speed);
+      }
+
       else if (step.type === "sorted") {
         setSorted((prev) => [
           ...prev,
@@ -116,6 +125,14 @@ function SortingVisualizer() {
 
     if(algorithm == "insertion"){
       animations = insertionSort(array);
+    }
+
+    if(algorithm == "merge"){
+      animations = mergeSort(array);
+    }
+
+    if(algorithm == "quick"){
+      animations = quickSort(array);
     }
 
     await runAnimations(animations);

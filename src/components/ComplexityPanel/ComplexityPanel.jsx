@@ -26,6 +26,22 @@ function ComplexityPanel({ algorithm }){
             worst: "O(n^2)",
             space: "O(1)",
         },
+
+        merge: {
+            name: "Merge Sort",
+            best: "O(n log n)",
+            average: "O(n log n)",
+            worst: "O(n log n)",
+            space: "O(n)",
+        },
+
+        quick: {
+            name: "Quick Sort",
+            best: "O(n log n)",
+            average: "O(n log n)",
+            worst: "O(n^2)",
+            space: "O(log n)",
+        }
     };
 
     const data = complexity[algorithm];
