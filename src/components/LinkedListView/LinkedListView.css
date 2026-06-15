@@ -1,0 +1,51 @@
+.list-container {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 40px;
+}
+
+.node-wrapper {
+  display: flex;
+
+  align-items: center;
+}
+
+.node {
+  width: 70px;
+
+  height: 70px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: steelblue;
+
+  color: white;
+
+  font-size: 20px;
+
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 30px;
+
+  margin: 0 10px;
+}
+
+.highlight .node {
+  background: green;
+}

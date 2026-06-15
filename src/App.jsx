@@ -5,10 +5,9 @@ import Navbar from './components/Navbar/Navbar';
 import ThemeToggle from './components-2/ThemeToggle/ThemeToggle';
 
 import SortingVisualizer from './pages/SortingVisualizer/SortingVisualizer';
-import BinarySearchVisualizer from './pages/BinarySearchVisualizer/BinarySearchVisualizer'
 import LinkedListVisualizer from './pages/LinkedListVisualizer/LinkedListVisualizer'
 import GraphVisualizer from './pages/GraphVisualizer/GraphVisualizer';
-
+import BinarySearch from './pages/BinarySearch/BinarySearch';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,7 +33,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<SortingVisualizer />} />
-        <Route path="/binary-search" element={<BinarySearchVisualizer />} />
+        <Route path="/binary-search" element={<BinarySearch />} />
         <Route path="/linked-list" element={<LinkedListVisualizer />} />
         <Route path="/graph" element={<GraphVisualizer />} />
       </Routes>
