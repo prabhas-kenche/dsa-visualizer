@@ -10,6 +10,7 @@ import mergeSort from "../../algorithms/mergeSort";
 import quickSort from "../../algorithms/quickSort";
 import ComplexityPanel from "../../components/ComplexityPanel/ComplexityPanel";
 import StatsPanel from "../../components/StatsPanel/StatsPanel";
+import AlgorithmInfo from "../../components/AlgorithmInfo/AlgorithmInfo";
 
 function SortingVisualizer() {
   const createRandomArray = (size) => {
@@ -143,6 +144,13 @@ function SortingVisualizer() {
 
   return (
     <>
+      <AlgorithmInfo
+        title="Sorting Algorithms"
+        description="Sorting rearranges elements into ascending or descending order."
+        timeComplexity="Depends on Algorithm"
+        spaceComplexity="Depends on Algorithm"
+      />
+
       <Controls
         generateArray={generateArray}
         startSorting={startSorting}

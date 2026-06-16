@@ -3,8 +3,8 @@ import {
 } from "react";
 
 import binarySearch from "../../algorithms/binarySearch";
-
 import BinarySearchArray from "../../components/BinarySearchArray/BinarySearchArray";
+import AlgorithmInfo from "../../components/AlgorithmInfo/AlgorithmInfo";
 
 function BinarySearch() {
   const generateArray = () => {
@@ -87,6 +87,13 @@ function BinarySearch() {
       <h1>
         Binary Search Visualizer
       </h1>
+
+      <AlgorithmInfo
+        title="Binary Search"
+        description="Binary Search repeatedly divides the search space in half until the target is found."
+        timeComplexity="O(log n)"
+        spaceComplexity="O(1)"
+      />
 
       <input
         type="number"

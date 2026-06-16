@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import LinkedListView from "../../components/LinkedListView/LinkedListView";
+import AlgorithmInfo from "../../components/AlgorithmInfo/AlgorithmInfo";
 
 function LinkedListVisualizer() {
   const [list, setList] =
@@ -89,6 +90,13 @@ function LinkedListVisualizer() {
       <h1>
         Linked List Visualizer
       </h1>
+
+      <AlgorithmInfo
+        title="Linked List"
+        description="A linked list stores elements in nodes connected using pointers."
+        timeComplexity="Search: O(n)"
+        spaceComplexity="O(n)"
+      />
 
       <input
         type="number"

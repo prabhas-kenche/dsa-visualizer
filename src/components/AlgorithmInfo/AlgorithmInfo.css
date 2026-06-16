@@ -1,0 +1,19 @@
+.alghorithm-info {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--card);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.algorithm-info h2 {
+    margin-bottom: 10px;
+}
+
+.complexity {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
