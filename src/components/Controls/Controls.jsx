@@ -30,7 +30,7 @@ function Controls({
             }
             disabled={isSorting}
         >
-            <option value="bubbled">Bubble Sort</option>
+            <option value="bubble">Bubble Sort</option>
             <option value="selection">Selection Sort</option>
             <option value="insertion">Insertion Sort</option>
             <option value="merge">Merge Sort</option>
@@ -52,7 +52,7 @@ function Controls({
         </div>
 
         <div>
-            <lebel>Speed: {speed}ms</lebel>
+            <label>Speed: {speed}ms</label>
 
             <input
                 type="range"

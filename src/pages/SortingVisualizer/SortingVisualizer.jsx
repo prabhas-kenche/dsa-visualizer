@@ -36,8 +36,6 @@ function SortingVisualizer() {
     setComparing([]);
     setSorted([]);
 
-    setComparing(0);
-    setSorted(0);
     setCompleted(false);
   };
 
@@ -124,15 +122,15 @@ function SortingVisualizer() {
       animations = selectionSort(array);
     }
 
-    if(algorithm == "insertion"){
+    if(algorithm === "insertion"){
       animations = insertionSort(array);
     }
 
-    if(algorithm == "merge"){
+    if(algorithm === "merge"){
       animations = mergeSort(array);
     }
 
-    if(algorithm == "quick"){
+    if(algorithm === "quick"){
       animations = quickSort(array);
     }
 

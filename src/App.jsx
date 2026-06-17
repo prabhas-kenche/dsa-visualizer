@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Navbar from './components/Navbar/Navbar';
 import ThemeToggle from './components-2/ThemeToggle/ThemeToggle';
 
+import Home from './pages/Home/Home';
 import SortingVisualizer from './pages/SortingVisualizer/SortingVisualizer';
 import LinkedListVisualizer from './pages/LinkedListVisualizer/LinkedListVisualizer'
 import GraphVisualizer from './pages/GraphVisualizer/GraphVisualizer';
@@ -32,7 +33,8 @@ function App() {
       </div>
 
       <Routes>
-        <Route path="/" element={<SortingVisualizer />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/sorting" element={<SortingVisualizer />} />
         <Route path="/binary-search" element={<BinarySearch />} />
         <Route path="/linked-list" element={<LinkedListVisualizer />} />
         <Route path="/graph" element={<GraphVisualizer />} />

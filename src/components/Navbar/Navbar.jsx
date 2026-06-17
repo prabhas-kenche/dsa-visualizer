@@ -7,7 +7,8 @@ function Navbar() {
             <h2>DSA Visualizer</h2>
             
             <div className="nav-links">
-                <Link to="/">Sorting</Link>
+                <Link to="/">Home</Link>
+                <Link to="/sorting">Sorting</Link>
                 <Link to="/binary-search">Binary search</Link>
                 <Link to="/linked-list">Linked List</Link>
                 <Link to="/graph">Graph</Link>
